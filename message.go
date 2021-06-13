@@ -5,7 +5,7 @@ import "fmt"
 type Message struct {
 	Title   string
 	Content string
-	footer  string
+	Footer  string
 }
 
 func (this Message) Hello() {

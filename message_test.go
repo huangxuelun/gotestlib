@@ -6,7 +6,7 @@ func TestMessage_Hello(t *testing.T) {
 	type fields struct {
 		Title   string
 		Content string
-		footer  string
+		Footer  string
 	}
 
 	tests := []struct {
@@ -14,13 +14,14 @@ func TestMessage_Hello(t *testing.T) {
 		fields fields
 	}{
 		{name: "my test",
-			fields: fields{Title: "my title", Content: "my content", footer: "this is footer"}},
+			fields: fields{Title: "my title", Content: "my content", Footer: "this is footer"}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			this := Message{
 				Title:   tt.fields.Title,
 				Content: tt.fields.Content,
+				Footer:  tt.fields.Footer,
 			}
 			this.Hello()
 		})
