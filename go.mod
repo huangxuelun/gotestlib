@@ -1,3 +1,3 @@
-module github.com/huangxuelun/gotestlib
+module gotestlib
 
 go 1.16
